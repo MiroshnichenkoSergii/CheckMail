@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		EF09916C297045BF006BAA87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09916B297045BE006BAA87 /* AppDelegate.swift */; };
 		EF09916E297045BF006BAA87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09916D297045BF006BAA87 /* SceneDelegate.swift */; };
-		EF099170297045BF006BAA87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09916F297045BF006BAA87 /* ViewController.swift */; };
+		EF099170297045BF006BAA87 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09916F297045BF006BAA87 /* VerificationViewController.swift */; };
 		EF099173297045BF006BAA87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF099171297045BF006BAA87 /* Main.storyboard */; };
 		EF099175297045C2006BAA87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF099174297045C2006BAA87 /* Assets.xcassets */; };
 		EF099178297045C2006BAA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF099176297045C2006BAA87 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		EF099168297045BE006BAA87 /* CheckMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF09916B297045BE006BAA87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF09916D297045BF006BAA87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF09916F297045BF006BAA87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF09916F297045BF006BAA87 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		EF099172297045BF006BAA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF099174297045C2006BAA87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF099177297045C2006BAA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,55 @@
 		EF09916A297045BE006BAA87 /* CheckMail */ = {
 			isa = PBXGroup;
 			children = (
+				EF09918329704C45006BAA87 /* Resources */,
+				EF09917F29704BBC006BAA87 /* Application */,
+				EF09918029704BE0006BAA87 /* Models */,
+				EF09918229704BF6006BAA87 /* Views */,
+				EF09918129704BEA006BAA87 /* Controllers */,
+			);
+			path = CheckMail;
+			sourceTree = "<group>";
+		};
+		EF09917F29704BBC006BAA87 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				EF09916B297045BE006BAA87 /* AppDelegate.swift */,
 				EF09916D297045BF006BAA87 /* SceneDelegate.swift */,
-				EF09916F297045BF006BAA87 /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EF09918029704BE0006BAA87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF09918129704BEA006BAA87 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF09916F297045BF006BAA87 /* VerificationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EF09918229704BF6006BAA87 /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				EF099171297045BF006BAA87 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF09918329704C45006BAA87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				EF099174297045C2006BAA87 /* Assets.xcassets */,
 				EF099176297045C2006BAA87 /* LaunchScreen.storyboard */,
 				EF099179297045C2006BAA87 /* Info.plist */,
 			);
-			path = CheckMail;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF099170297045BF006BAA87 /* ViewController.swift in Sources */,
+				EF099170297045BF006BAA87 /* VerificationViewController.swift in Sources */,
 				EF09916C297045BF006BAA87 /* AppDelegate.swift in Sources */,
 				EF09916E297045BF006BAA87 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8683DU5JVT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CheckMail/Info.plist;
+				INFOPLIST_FILE = CheckMail/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8683DU5JVT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CheckMail/Info.plist;
+				INFOPLIST_FILE = CheckMail/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
