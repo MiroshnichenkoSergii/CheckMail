@@ -18,6 +18,9 @@ class VerificationViewController: UIViewController {
     }()
     
     private let statusLabel = StatusLabel()
+    private let mailTextField = MailTextField()
+    private let verificationButton = VerificationButton()
+    private let collectionView = MailCollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +36,37 @@ class VerificationViewController: UIViewController {
     }
     
     private func setDelegates() {
-        
+        collectionView.dataSource = self
+        collectionView.selectMailDelegate = self
     }
     
 }
+
+//MARK: - Collection View Data Source
+
+extension VerificationViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        6
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: idCell.idMailCell.rawValue, for: indexPath) as? MailCollectionViewCell else { return UICollectionViewCell()}
+        
+        return cell
+    }
+}
+
+//MARK: - Select Proposed Mail Protocol
+
+extension VerificationViewController: SelectProposedMailProtocol {
+    func selectProposedMail(indexPath: IndexPath) {
+        print(indexPath)
+    }
+}
+
+//MARK: - Constraints
 
 extension VerificationViewController {
     
