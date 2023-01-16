@@ -15,6 +15,8 @@
 		EF09918A2975694D006BAA87 /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0991892975694D006BAA87 /* StatusLabel.swift */; };
 		EF09918E29756E83006BAA87 /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09918D29756E83006BAA87 /* UIStackView + Extension.swift */; };
 		EF09919029757035006BAA87 /* MailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09918F29757035006BAA87 /* MailTextField.swift */; };
+		EF099192297572DF006BAA87 /* VerificationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF099191297572DF006BAA87 /* VerificationButton.swift */; };
+		EF099194297574AD006BAA87 /* MailCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF099193297574AD006BAA87 /* MailCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		EF0991892975694D006BAA87 /* StatusLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLabel.swift; sourceTree = "<group>"; };
 		EF09918D29756E83006BAA87 /* UIStackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
 		EF09918F29757035006BAA87 /* MailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailTextField.swift; sourceTree = "<group>"; };
+		EF099191297572DF006BAA87 /* VerificationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationButton.swift; sourceTree = "<group>"; };
+		EF099193297574AD006BAA87 /* MailCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				EF0991892975694D006BAA87 /* StatusLabel.swift */,
 				EF09918F29757035006BAA87 /* MailTextField.swift */,
+				EF099191297572DF006BAA87 /* VerificationButton.swift */,
+				EF099193297574AD006BAA87 /* MailCollectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,9 +206,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF09918A2975694D006BAA87 /* StatusLabel.swift in Sources */,
+				EF099192297572DF006BAA87 /* VerificationButton.swift in Sources */,
 				EF099170297045BF006BAA87 /* VerificationViewController.swift in Sources */,
 				EF09919029757035006BAA87 /* MailTextField.swift in Sources */,
 				EF09916C297045BF006BAA87 /* AppDelegate.swift in Sources */,
+				EF099194297574AD006BAA87 /* MailCollectionView.swift in Sources */,
 				EF09918E29756E83006BAA87 /* UIStackView + Extension.swift in Sources */,
 				EF09916E297045BF006BAA87 /* SceneDelegate.swift in Sources */,
 			);
