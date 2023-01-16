@@ -8,40 +8,50 @@
 import UIKit
 
 class VerificationViewController: UIViewController {
-
-    @IBOutlet weak var statusLabel: UILabel!
-    @IBOutlet weak var mailTextField: UITextField!
-    @IBOutlet weak var verificationButton: UIButton!
     
-    @IBOutlet weak var mailCollectionView: UICollectionView!
+    private let backgroundImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.image = UIImage(named: "backgroundImage")
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
+    
+    private let statusLabel = StatusLabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mailCollectionView.delegate = self
-        mailCollectionView.dataSource = self
-    }
-
-    @IBAction func verificationTapped(_ sender: UIButton) {
+        setupViews()
+        setDelegates()
+        setConstraints()
     }
     
-}
-
-extension VerificationViewController: UICollectionViewDelegate {
-    
-}
-
-extension VerificationViewController: UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+    private func setupViews() {
+        view.addSubview(backgroundImageView)
+        view.addSubview(statusLabel)
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = mailCollectionView.dequeueReusableCell(withReuseIdentifier: "MailCell", for: indexPath)
+    private func setDelegates() {
         
-        return cell
     }
     
 }
 
+extension VerificationViewController {
+    
+    private func setConstraints() {
+        NSLayoutConstraint.activate([
+            backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
+            backgroundImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            backgroundImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            statusLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 300),
+            statusLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            statusLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
+        ])
+    }
+    
+}
