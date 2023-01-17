@@ -18,6 +18,7 @@
 		EF099192297572DF006BAA87 /* VerificationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF099191297572DF006BAA87 /* VerificationButton.swift */; };
 		EF099194297574AD006BAA87 /* MailCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF099193297574AD006BAA87 /* MailCollectionView.swift */; };
 		EF09919729757652006BAA87 /* MailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09919629757652006BAA87 /* MailCollectionViewCell.swift */; };
+		EFB05A822976EC25001B6AF9 /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB05A812976EC25001B6AF9 /* VerificationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		EF099191297572DF006BAA87 /* VerificationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationButton.swift; sourceTree = "<group>"; };
 		EF099193297574AD006BAA87 /* MailCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCollectionView.swift; sourceTree = "<group>"; };
 		EF09919629757652006BAA87 /* MailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCollectionViewCell.swift; sourceTree = "<group>"; };
+		EFB05A812976EC25001B6AF9 /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		EF09918029704BE0006BAA87 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EFB05A812976EC25001B6AF9 /* VerificationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB05A822976EC25001B6AF9 /* VerificationModel.swift in Sources */,
 				EF09918A2975694D006BAA87 /* StatusLabel.swift in Sources */,
 				EF09919729757652006BAA87 /* MailCollectionViewCell.swift in Sources */,
 				EF099192297572DF006BAA87 /* VerificationButton.swift in Sources */,

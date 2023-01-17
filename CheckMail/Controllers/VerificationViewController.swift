@@ -98,7 +98,7 @@ extension VerificationViewController {
     private func setConstraints() {
         NSLayoutConstraint.activate([
             backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
-            backgroundImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            backgroundImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -5),
             backgroundImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
         
