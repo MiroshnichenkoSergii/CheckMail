@@ -19,6 +19,7 @@
 		EF099194297574AD006BAA87 /* MailCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF099193297574AD006BAA87 /* MailCollectionView.swift */; };
 		EF09919729757652006BAA87 /* MailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09919629757652006BAA87 /* MailCollectionViewCell.swift */; };
 		EFB05A822976EC25001B6AF9 /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB05A812976EC25001B6AF9 /* VerificationModel.swift */; };
+		EFB05A84297705D1001B6AF9 /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB05A83297705D1001B6AF9 /* String + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		EF099193297574AD006BAA87 /* MailCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCollectionView.swift; sourceTree = "<group>"; };
 		EF09919629757652006BAA87 /* MailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCollectionViewCell.swift; sourceTree = "<group>"; };
 		EFB05A812976EC25001B6AF9 /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
+		EFB05A83297705D1001B6AF9 /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				EF09918C29756E4E006BAA87 /* UIKit */,
+				EFB05A83297705D1001B6AF9 /* String + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				EF09919729757652006BAA87 /* MailCollectionViewCell.swift in Sources */,
 				EF099192297572DF006BAA87 /* VerificationButton.swift in Sources */,
 				EF099170297045BF006BAA87 /* VerificationViewController.swift in Sources */,
+				EFB05A84297705D1001B6AF9 /* String + Extensions.swift in Sources */,
 				EF09919029757035006BAA87 /* MailTextField.swift in Sources */,
 				EF09916C297045BF006BAA87 /* AppDelegate.swift in Sources */,
 				EF099194297574AD006BAA87 /* MailCollectionView.swift in Sources */,
