@@ -17,6 +17,7 @@ class VerificationModel {
     private func filteringMails(text: String) {
         
         var domainMail = String()
+        filteredMailArray = []
         
         guard let firstIndex = text.firstIndex(of: "@") else { return }
         let endIndex = text.index(before: text.endIndex)

@@ -9,6 +9,8 @@ import UIKit
 
 class VerificationViewController: UIViewController {
     
+    //MARK: - Properties
+    
     private let backgroundImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -26,6 +28,10 @@ class VerificationViewController: UIViewController {
                                                                collectionView],
                                              axis: .vertical,
                                              spacing: 20)
+    
+    private let verificationModel = VerificationModel()
+    
+    //MARK: - Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,12 +65,17 @@ class VerificationViewController: UIViewController {
 extension VerificationViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        6
+        return verificationModel.filteredMailArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: IdCell.idMailCell.rawValue, for: indexPath) as? MailCollectionViewCell else { return UICollectionViewCell()}
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: IdCell.idMailCell.rawValue, for: indexPath) as? MailCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        
+        let mailLabelText = verificationModel.filteredMailArray[indexPath.row]
+        cell.cellConfigure(mailLabelText: mailLabelText)
         
         return cell
     }
@@ -83,7 +94,8 @@ extension VerificationViewController: SelectProposedMailProtocol {
 extension VerificationViewController: ActionsMailTextFieldProtocol {
     
     func typingText(text: String) {
-        print(text)
+        verificationModel.getFiltredMail(text: text)
+        collectionView.reloadData()
     }
     
     func cleanOutTextField() {

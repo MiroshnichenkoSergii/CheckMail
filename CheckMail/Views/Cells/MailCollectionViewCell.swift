@@ -35,12 +35,20 @@ class MailCollectionViewCell: UICollectionViewCell {
         
         addSubview(domainLabel)
     }
+    
+    private func configure(mailLabelText: String) {
+        domainLabel.text = mailLabelText
+    }
+    
+    public func cellConfigure(mailLabelText: String) {
+        configure(mailLabelText: mailLabelText)
+    }
 }
 
 extension MailCollectionViewCell {
     private func setConstraints() {
         NSLayoutConstraint.activate([
-            domainLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            domainLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             domainLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }
