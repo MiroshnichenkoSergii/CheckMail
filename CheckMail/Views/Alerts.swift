@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct Alert {
+struct Alerts {
     
     private static func showSimpleAlert(vc: UIViewController, title: String, message: String) {
         
