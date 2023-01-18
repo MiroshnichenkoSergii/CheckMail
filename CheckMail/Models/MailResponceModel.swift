@@ -10,7 +10,7 @@ import Foundation
 struct MailResponceModel: Decodable {
     let result: String
     let reason:String
-    let did_you_mean: String?
+    let didYouMean: String?
     let success: Bool
     
     var reasonDescription: String {

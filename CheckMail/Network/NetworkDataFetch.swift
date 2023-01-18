@@ -17,7 +17,9 @@ class NetworkDataFetch {
             switch result {
                 case .success(let data):
                     do {
-                        let mail = try JSONDecoder().decode(MailResponceModel.self, from: data)
+                        let decoder = JSONDecoder()
+                        decoder.keyDecodingStrategy = .convertFromSnakeCase
+                        let mail = try decoder.decode(MailResponceModel.self, from: data)
                         responce(mail, nil)
                     } catch let jsonError {
                         print("Failed to decode JSON", jsonError)

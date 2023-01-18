@@ -64,11 +64,18 @@ class VerificationViewController: UIViewController {
                 guard let result = result else { return }
                 
                 if result.success {
-                    print("good")
+                    guard let didYouMeanError = result.didYouMean else {
+                        Alerts.showResultAlert(vc: self, message: "Mail status \(result.result) \n \(result.reasonDescription)")
+                        return
+                    }
+                    Alerts.showErrorAlert(vc: self, message: "Did you mean: \(didYouMeanError)") { [weak self] in
+                        guard let self = self else { return }
+                        self.mailTextField.text = didYouMeanError
+                    }
                 }
             } else {
                 guard let errorDescription = error?.localizedDescription else { return }
-                print("error", errorDescription)
+                Alerts.showResultAlert(vc: self, message: errorDescription)
             }
         }
     }
