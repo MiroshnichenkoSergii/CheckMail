@@ -18,6 +18,8 @@
 		EF099192297572DF006BAA87 /* VerificationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF099191297572DF006BAA87 /* VerificationButton.swift */; };
 		EF099194297574AD006BAA87 /* MailCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF099193297574AD006BAA87 /* MailCollectionView.swift */; };
 		EF09919729757652006BAA87 /* MailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09919629757652006BAA87 /* MailCollectionViewCell.swift */; };
+		EF860275297817FF005D931B /* MailApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF860274297817FF005D931B /* MailApiKey.swift */; };
+		EF86027729781CF4005D931B /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86027629781CF4005D931B /* NetworkRequest.swift */; };
 		EFB05A822976EC25001B6AF9 /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB05A812976EC25001B6AF9 /* VerificationModel.swift */; };
 		EFB05A84297705D1001B6AF9 /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB05A83297705D1001B6AF9 /* String + Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,8 @@
 		EF099191297572DF006BAA87 /* VerificationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationButton.swift; sourceTree = "<group>"; };
 		EF099193297574AD006BAA87 /* MailCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCollectionView.swift; sourceTree = "<group>"; };
 		EF09919629757652006BAA87 /* MailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF860274297817FF005D931B /* MailApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailApiKey.swift; sourceTree = "<group>"; };
+		EF86027629781CF4005D931B /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		EFB05A812976EC25001B6AF9 /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
 		EFB05A83297705D1001B6AF9 /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +74,7 @@
 		EF09916A297045BE006BAA87 /* CheckMail */ = {
 			isa = PBXGroup;
 			children = (
+				EF860273297817C2005D931B /* Network */,
 				EF09918329704C45006BAA87 /* Resources */,
 				EF09917F29704BBC006BAA87 /* Application */,
 				EF09918029704BE0006BAA87 /* Models */,
@@ -160,6 +165,15 @@
 			path = VerificationVC;
 			sourceTree = "<group>";
 		};
+		EF860273297817C2005D931B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EF860274297817FF005D931B /* MailApiKey.swift */,
+				EF86027629781CF4005D931B /* NetworkRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,11 +244,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF86027729781CF4005D931B /* NetworkRequest.swift in Sources */,
 				EFB05A822976EC25001B6AF9 /* VerificationModel.swift in Sources */,
 				EF09918A2975694D006BAA87 /* StatusLabel.swift in Sources */,
 				EF09919729757652006BAA87 /* MailCollectionViewCell.swift in Sources */,
 				EF099192297572DF006BAA87 /* VerificationButton.swift in Sources */,
 				EF099170297045BF006BAA87 /* VerificationViewController.swift in Sources */,
+				EF860275297817FF005D931B /* MailApiKey.swift in Sources */,
 				EFB05A84297705D1001B6AF9 /* String + Extensions.swift in Sources */,
 				EF09919029757035006BAA87 /* MailTextField.swift in Sources */,
 				EF09916C297045BF006BAA87 /* AppDelegate.swift in Sources */,
